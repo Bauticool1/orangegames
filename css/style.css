@@ -1,0 +1,178 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+
+}
+ /*Global*/
+html{
+    font-size:  62.5%;
+    box-sizing: border-box; /*Hack para box model*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-size:  16px;/* 1rem = 10 px */
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top,var(--grisClaro) 0%, var(--grisClaro)100% );
+}
+/*Tipografia*/
+h1{
+    font-size: 50px;
+}
+.text-1{
+    font-size: 30px;
+}
+/***logo***/
+
+
+/*****Navegacion****/
+.img{
+    flex-direction: row; 
+}
+
+.title{
+    background-color: var(--secundario);
+    width:  100vw;
+    height: 10vh;
+}
+
+.navegacion-principal{
+    height: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    /*font-size: 2rem;*/
+    font-weight: 700;
+    padding: 1rem;
+    
+}
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+/********Principal*******/
+
+
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 60%;
+    text-align: center;
+    border: none;
+}
+.boton:hover{
+    cursor: pointer;
+    color: var(--oscuro);
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column-reverse; 
+}
+.content{
+    /*background-color: var(--secundario);*/
+    margin-top: 1rem;
+    width: 100vw;
+    height: 40vh;
+}
+/*Contenido hero*/
+.hero{
+    background-image: url(../recursos/webpara-artistas.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 427px;
+    margin-bottom: 2rem;
+}
+.contenido-hero{
+    position: absolute;
+    background-color: rgb(0, 0, 0, .7);
+    width: 100vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contenido-hero h2{
+    color: var(--blanco);
+}
+
+
+/*Servicios*/
+
+.servicio {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio h3 {
+    color: var(--oscuro);
+    font-weight: normal;
+}
+
+.servicio p {
+    line-height: 2; /* espacio de interlineado*/
+}
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--blanco);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*****Columnas*****/
+.columns{
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+.one{
+    display: none;
+}
+.two{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+    
+
+}
+
+/****Casilleros****/
+.box{
+    /*background-color: var(--oscuro);*/
+    width: 48vw;
+    height: 23vh;
+}
+
+
+
